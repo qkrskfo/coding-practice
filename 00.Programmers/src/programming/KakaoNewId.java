@@ -1,3 +1,4 @@
+package programming;
 
 public class KakaoNewId {
 	public static void main(String[] args) {
