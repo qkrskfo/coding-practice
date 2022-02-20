@@ -1,13 +1,20 @@
 package coding.test;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+		for(int i=1; i<=n; i++) {
+			System.out.println(i);
+		}
+		sc.close();
+		
+		/*
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int n = Integer.parseInt(br.readLine());
@@ -17,7 +24,7 @@ public class Main {
 			System.out.println(i);
 		}
 		
-		/*
+		
 		StringTokenizer st;
 		StringBuilder sb = new StringBuilder();
 		for(int i=0; i<length; i++) {
