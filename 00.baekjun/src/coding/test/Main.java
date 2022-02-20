@@ -3,12 +3,62 @@ package coding.test;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
-import java.util.StringTokenizer;
 
 public class Main {
 
 	public static void main(String[] args) throws IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		int n = Integer.parseInt(br.readLine());
+		br.close();
+		
+		for(int i=1; i<=n; i++) {
+			System.out.println(i);
+		}
+		
+		/*
+		StringTokenizer st;
+		StringBuilder sb = new StringBuilder();
+		for(int i=0; i<length; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			sb.append(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()));
+			sb.append('\n');
+		}
+		
+		br.close();
+		
+		System.out.println(sb);
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		sc.close();
+		
+		int tot=0;
+		
+		for(int i = 0; i <= n; i++) {
+			tot +=i;
+		}
+		
+		System.out.println(tot);
+		
+		
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		
+		if(a==b && a==c && b==c) {
+			System.out.println(10000 + (a*1000));
+		} else if (a==b || a==c) {
+			System.out.println(1000 + (a*100));
+		} else if (b==c) {
+			System.out.println(1000 + (b*100));
+		} else {
+			System.out.println((Math.max(a,  Math.max(b, c)) * 100));
+		}
+		
 		
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -27,7 +77,7 @@ public class Main {
 		System.out.println(sb);
 		
 		
-		/*
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int length = Integer.parseInt(br.readLine());
