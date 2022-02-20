@@ -10,6 +10,59 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		int length = Integer.parseInt(br.readLine());
+		
+		StringTokenizer st;
+		StringBuilder sb = new StringBuilder();
+		
+		for(int i=0; i<length; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			sb.append(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()));
+			sb.append('\n');
+		}
+		
+		System.out.println(sb);
+		
+		
+		/*
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		int length = Integer.parseInt(br.readLine());
+		
+		StringTokenizer st;
+		StringBuilder sb = new StringBuilder();
+		
+		for(int i=0; i<length; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			sb.append(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()));
+			sb.append('\n');
+		}
+		
+		System.out.println(sb);
+		
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int length = sc.nextInt();
+		
+		int arr[] = new int[length];
+		
+		for(int i=0; i<length; i++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			arr[i] = a + b;
+		}
+		sc.close();
+		
+		for(int j : arr) {
+			System.out.println(j);
+		}
+		
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int n = Integer.parseInt(br.readLine());
@@ -25,9 +78,11 @@ public class Main {
 		
 		System.out.println(sb);
 		
-		//Scanner sc = new Scanner(System.in);
 		
-		/*
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
 		int a = sc.nextInt();
 		
 		int arr[] = new int[a];
